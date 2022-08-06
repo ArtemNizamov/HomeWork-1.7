@@ -19,17 +19,17 @@ public class Main {
 
         System.out.println("Задание № 2");
 
-        fullName = fullName.toUpperCase();
+        String upperfullName = fullName.toUpperCase();
 
-        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + fullName);
+        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + upperfullName);
 
         System.out.println();
         // task 3
 
         System.out.println("Задание № 3");
 
-        fullName.replace("ё", "е");
         fullName = "Иванов Семён Семёнович";
-        System.out.println("Данные ФИО сотрудника - " + fullName);
+        String fixedFullName = fullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника - " + fixedFullName);
     }
 }
